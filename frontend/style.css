@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    background-color: #f8f3e6; /* Warm, food-inspired background */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun and playful font */
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.transparenttextures.com/patterns/food.png'); /* Subtle food pattern */
+  }
+  
+  header {
+    background-color: #ff6f61; /* Vibrant, food-inspired color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Pacifico', cursive; /* Fun, handwritten font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  
+  input[type="text"] {
+    background-color: #fff;
+    border: 2px solid #ff6f61;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 12px;
+    width: 300px;
+    margin: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #ffcc00; /* Bright yellow for focus */
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    background-color: #ffcc00; /* Bright yellow */
+    border: none;
+    border-radius: 8px;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ff6f61; /* Vibrant pink on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Results Section */
+  #results {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 40px 0;
+    padding: 20px;
+  }
+  
+  #results > div {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #results > div:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  #results img {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border: 2px solid #ffcc00; /* Bright yellow border */
+  }
+  
+  #results h3 {
+    color: #333;
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Pacifico', cursive; /* Fun, handwritten font */
+  }
+  
+  #results ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #results li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  #results a {
+    background-color: #ff6f61; /* Vibrant pink */
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #results a:hover {
+    background-color: #ffcc00; /* Bright yellow on hover */
+    color: #333;
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Fun Animations */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  h1 {
+    animation: bounce 2s infinite; /* Bouncing title */
+  }
+  
+  button[type="submit"], #results a {
+    animation: bounce 1.5s infinite; /* Bouncing buttons */
+  }
+  
+  /* Food-Themed Background */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/food.png'); /* Food pattern */
+    opacity: 0.1;
+    z-index: -1;
+  }
+  
+  /* Fun Icons */
+  #results li::before {
+    content: '🍴'; /* Fork and knife emoji */
+    margin-right: 10px;
+  }
+  
+  #results h3::before {
+    content: '🍽️'; /* Plate emoji */
+    margin-right: 10px;
+  }
+
+  .recipe-steps {
+    padding-left: 1.5em;
+    line-height: 1.6;
+  }
+  .recipe-steps li {
+    margin-bottom: 0.5em;
+  }
+  .back-link {
+    display: inline-block;
+    margin-top: 1.5em;
+    color: #0066cc;
+  }
