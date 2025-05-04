@@ -53,17 +53,27 @@ ReciepeFinder/
 ## 📁 Project Structure
 
 ```
-ReciepeFinder/
+RecipeFinder/
 ├── backend/
 │   ├── data/
-│   │   └── RAW_recipes.csv      # Recipe dataset (added manually)
-│   ├── server.js                # Main Node.js server
-│   └── package.json             # Node dependencies
+│   │   └── RAW_recipes.zip          # Compressed recipe dataset
+│   ├── node_modules/                # Node.js dependencies
+│   ├── routes/
+│   │   └── recipes.js               # API routes for fetching recipe data
+│   ├── index.js                     # Entry point for Express backend server
+│   ├── package-lock.json            # Dependency lock file
+│   └── package.json                 # Project dependencies and scripts
+│
 ├── frontend/
-│   ├── index.html               # Main frontend file
-│   ├── styles.css               # Styling
-│   └── script.js                # Frontend logic
-└── README.md                    # Documentation
+│   ├── app.js                       # Handles frontend logic (API requests, DOM updates)
+│   ├── details.html                 # Displays individual recipe details
+│   ├── details.js                   # JS for fetching and displaying recipe details
+│   ├── index.html                   # Main landing page of the app
+│   └── style.css                    # Styling for the frontend
+│
+├── .gitattributes                   # Git configuration for consistent line endings
+└── README.md                        # Project documentation
+
 ```
 
 ---
